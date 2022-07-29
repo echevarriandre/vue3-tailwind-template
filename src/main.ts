@@ -13,7 +13,7 @@ app.use(createPinia());
 app.use(router);
 
 const messages = Object.fromEntries(
-  Object.entries(import.meta.globEager("../locales/*.y(a)?ml")).map(([key, value]) => [
+  Object.entries(import.meta.glob<{ default: never }>("../locales/*.y(a)?ml", { eager: true })).map(([key, value]) => [
     key.slice(11, -4),
     value.default,
   ]),
