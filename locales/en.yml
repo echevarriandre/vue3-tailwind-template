@@ -1,2 +1,5 @@
 home:
   title: Home
+  toggle-dark: Toggle Dark
+not-found:
+  title: 404

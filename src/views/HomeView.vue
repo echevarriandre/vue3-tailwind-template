@@ -1,4 +1,8 @@
 <script setup lang="ts">
+const { t } = useI18n();
+const docTitle = useTitle();
+docTitle.value = t("home.title");
+
 const { x, y } = useMouse();
 
 const isDark = useDark();
@@ -18,7 +22,9 @@ const toggleDark = useToggle(isDark);
         <p>{{ `y: ${y}` }}</p>
       </div>
 
-      <button class="rounded bg-green-500 py-2 px-4 text-white dark:bg-black" @click="toggleDark()">toggle dark</button>
+      <button class="rounded bg-green-500 py-2 px-4 text-white dark:bg-black" @click="toggleDark()">
+        {{ $t("home.toggle-dark") }}
+      </button>
     </div>
   </main>
 </template>
