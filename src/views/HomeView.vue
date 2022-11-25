@@ -2,6 +2,6 @@
 
 <template>
   <main>
-    <div class="text-red-400">Hello</div>
+    <div class="text-red-400">{{ $t("home.title") }}</div>
   </main>
 </template>
