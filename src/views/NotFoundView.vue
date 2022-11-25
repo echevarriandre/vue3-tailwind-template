@@ -1,7 +1,9 @@
 <script setup lang="ts">
 const { t } = useI18n();
-const docTitle = useTitle();
-docTitle.value = t("not-found.title");
+useHead({
+  title: t("not-found.title"),
+  titleTemplate: (title) => `${title} | Vue3 + Tailwind Template`,
+});
 </script>
 
 <template>

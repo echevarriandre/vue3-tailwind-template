@@ -1,7 +1,9 @@
 <script setup lang="ts">
 const { t } = useI18n();
-const docTitle = useTitle();
-docTitle.value = t("home.title");
+useHead({
+  title: t("home.title"),
+  titleTemplate: (title) => `${title} | Vue3 + Tailwind Template`,
+});
 
 const { x, y } = useMouse();
 
