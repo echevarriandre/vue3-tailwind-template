@@ -2,6 +2,9 @@
 
 <template>
   <main>
-    <div class="text-red-400">{{ $t("home.title") }}</div>
+    <div class="flex items-center text-red-400">
+      {{ $t("home.title") }}
+      <i-heroicons-rocket-launch-solid />
+    </div>
   </main>
 </template>

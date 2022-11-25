@@ -1,8 +1,8 @@
-import { createApp } from "vue";
-import { createPinia } from "pinia";
-import { createI18n } from "vue-i18n";
-import { createHead } from "@vueuse/head";
 import messages from "@intlify/unplugin-vue-i18n/messages";
+import { createHead } from "@vueuse/head";
+import { createPinia } from "pinia";
+import { createApp } from "vue";
+import { createI18n } from "vue-i18n";
 
 import App from "./App.vue";
 import router from "./router";
