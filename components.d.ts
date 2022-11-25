@@ -8,6 +8,9 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    'IFluentEmojiHighContrast:disappointedFace': typeof import('~icons/fluent-emoji-high-contrast/disappointed-face')['default']
+    'IFluentEmojiHighContrast:faceWithOpenEyesAndHandOverMouth': typeof import('~icons/fluent-emoji-high-contrast/face-with-open-eyes-and-hand-over-mouth')['default']
+    IFluentEmojiHighContrastFaceWithOpenEyesAndHandOverMouth: typeof import('~icons/fluent-emoji-high-contrast/face-with-open-eyes-and-hand-over-mouth')['default']
     IHeroiconsRocketLaunchSolid: typeof import('~icons/heroicons/rocket-launch-solid')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
